@@ -1,0 +1,13 @@
+{
+    "processed_dir":  "local_data/processed",
+    "artifact_dir":  "artifacts/v3_reproduced",
+    "output_dir":  "results/runs",
+    "history":  {
+                    "val":  "train",
+                    "test":  "train_plus_val"
+                },
+    "purpose":  "rebuilt_v3_inference_only",
+    "supported_commands":  [
+                               "recommend"
+                           ]
+}

@@ -1,0 +1,17 @@
+{
+    "processed_dir":  "local_data/processed",
+    "artifact_dir":  "local_data/processed/artifacts_v1",
+    "output_dir":  "results/runs",
+    "history":  {
+                    "val":  "train",
+                    "test":  "train_plus_val"
+                },
+    "frozen_protocol":  "artifacts_v1/test_protocol_v1.json",
+    "purpose":  "original_reference",
+    "supported_commands":  [
+                               "recommend",
+                               "verify",
+                               "evaluate-val",
+                               "train-v3"
+                           ]
+}

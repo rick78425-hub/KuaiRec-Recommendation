@@ -1,0 +1,3 @@
+-r requirements-inference.txt
+# DeepFM currently remains in the archived notebook.
+# Historical environment: torch 2.13.0+cu126; match hardware before installation.

@@ -1,0 +1,68 @@
+{
+  "recommend": {
+    "action": "Generate one user recommendation from frozen weights",
+    "trains_model": false,
+    "reads_test_labels": false,
+    "original_notebook_equivalent": "recommend / frozen Test recommendation"
+  },
+  "verify": {
+    "action": "Compare three reference users",
+    "trains_model": false,
+    "reads_test_labels": false,
+    "original_notebook_equivalent": "reference inference checks"
+  },
+  "evaluate-val": {
+    "action": "Rerun full Val inference and compare saved metrics",
+    "trains_model": false,
+    "reads_test_labels": false,
+    "original_notebook_equivalent": "full Val evaluation"
+  },
+  "train-v3": {
+    "action": "Rebuild internal samples, verify training table, retrain V3",
+    "trains_model": true,
+    "reads_test_labels": false,
+    "original_notebook_equivalent": "internal split and LightGBM V3 training"
+  },
+  "rebuild-val-state": {
+    "action": "Rebuild train-only ItemCF and history state",
+    "trains_model": false,
+    "reads_test_labels": false,
+    "original_notebook_equivalent": "full Train recall and history construction"
+  },
+  "rebuild-test-state": {
+    "action": "Rebuild Train+Val ItemCF and history state",
+    "trains_model": false,
+    "reads_test_labels": false,
+    "original_notebook_equivalent": "Test history update"
+  },
+  "export-bundle": {
+    "action": "Copy verified rebuilt assets and check six users",
+    "trains_model": false,
+    "reads_test_labels": false,
+    "original_notebook_equivalent": "NEW engineering packaging; no new algorithm"
+  },
+  "verify-deepfm": {
+    "action": "Compare DeepFM V1/V2 on three users",
+    "trains_model": false,
+    "reads_test_labels": false,
+    "original_notebook_equivalent": "subset of full DeepFM validation"
+  },
+  "evaluate-deepfm": {
+    "action": "Rerun both DeepFM versions on full Val",
+    "trains_model": false,
+    "reads_test_labels": false,
+    "original_notebook_equivalent": "full DeepFM Val comparison"
+  },
+  "audit-test": {
+    "action": "Audit saved Test files and recalculate metrics from Test labels",
+    "trains_model": false,
+    "reads_test_labels": true,
+    "original_notebook_equivalent": "Test integrity audit and metric calculation; stronger completeness checks"
+  },
+  "test-end-to-end": {
+    "action": "Generate all Test predictions using the rebuilt V3 bundle, then evaluate against Test labels",
+    "trains_model": false,
+    "reads_test_labels": true,
+    "original_notebook_equivalent": "Frozen full Test prediction followed by evaluation; no tuning"
+  }
+}

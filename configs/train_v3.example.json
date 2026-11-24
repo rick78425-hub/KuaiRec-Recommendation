@@ -1,0 +1,31 @@
+{
+    "recipe":  "V3_original_internal_80pct_1000users",
+    "raw_zip_path":  "local_data/KuaiRec.zip",
+    "history_quantile":  0.8,
+    "positive_threshold":  1.0,
+    "itemcf_top_n":  100,
+    "recall_k":  1000,
+    "itemcf_ratio":  0.7,
+    "category_smoothing":  10,
+    "sampling":  {
+                     "preview_users":  200,
+                     "preview_seed":  42,
+                     "extra_train_users":  600,
+                     "valid_users":  200,
+                     "extra_seed":  2026
+                 },
+    "model_params":  {
+                         "n_estimators":  500,
+                         "learning_rate":  0.05,
+                         "num_leaves":  31,
+                         "max_depth":  8,
+                         "min_child_samples":  100,
+                         "random_state":  42,
+                         "verbosity":  -1
+                     },
+    "early_stopping_rounds":  30,
+    "eval_metric":  "binary_logloss",
+    "reference_artifacts_role":  "comparison only; never used to build training inputs",
+    "test_used":  false,
+    "external_val_used":  false
+}

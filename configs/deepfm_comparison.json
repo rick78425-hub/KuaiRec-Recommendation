@@ -1,0 +1,12 @@
+{
+  "role": "comparison_only",
+  "versions": [
+    "v1",
+    "v2"
+  ],
+  "coarse_k": 200,
+  "final_k": 50,
+  "embedding_dim": 8,
+  "inference_device": "cpu",
+  "training_status": "archived reference cells; no independent retraining in this phase"
+}

@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+
+# Datasets
+local_data/
+*.zip
+*.csv
+*.csv.gz
+*.parquet
+
+# Model weights and intermediate artifacts
+*.joblib
+*.pkl
+*.pt
+*.pth
+*.safetensors
+*.npy
+*.npz
+artifacts/v3_reproduced/
+
+# Local configurations
+configs/local.json
+configs/train_v3.json
+configs/reproduced_bundle.json
+
+# Experiment outputs
+results/runs/
+runs/
+
+# Sensitive information
+.env
+.env.*
+*.pem
+*.key
